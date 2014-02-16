@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BARCHART</title>
+  <script src="barchart.js"></script>
+  <style type="text/css">
+    #chart-canvas{ max-width: 100%; }
+  </style>
+</head>
+<body style="text-align:center;">
+  <canvas id="chart-canvas" width="640" height="640"></canvas>
+
+  <script type="text/javascript">
+    var names = ["Jorge", "Pasta", "Joana", "Gaila", "Hell"];
+    var colors = ["#ECD078", "#D95B43", "#C02942", "#54A4E7", "#53777A"];
+    var values = [7, 3, 16, 2, 1];
+
+    var data = [ names, values, colors ];
+
+    var canvas = document.getElementById("chart-canvas")
+    var bar_chart = new BarChart(canvas, data);
+  </script>
+</body>
+</html>
